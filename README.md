@@ -46,3 +46,10 @@ paket add Serilog.Sinks.RollingFile --project Framework461/MyLibrary/MyLibrary.f
 paket remove Serilog --project Framework461/MyLibrary/MyLibrary.fsproj
 paket remove Serilog.Sinks.RollingFile --project Framework461/MyLibrary/MyLibrary.fsproj
 ```
+
+## Self Contained
+
+```bash
+dotnet publish -c release -r osx.10.10-x64  Standard20/MyApp/MyApp.fsproj --output "../../Dist"
+./Dist/MyApp
+```
