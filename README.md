@@ -36,9 +36,9 @@ dotnet add Standard20/MyApp/MyApp.fsproj package Serilog.Sinks.RollingFile
 dotnet run --project Standard20/MyApp/MyApp.fsproj
 ```
 
-## Paket
+### Paket
 
-```
+```bash
 # Break reference in MyLibrary 
 paket add Serilog --project Framework461/MyLibrary/MyLibrary.fsproj
 paket add Serilog.Sinks.RollingFile --project Framework461/MyLibrary/MyLibrary.fsproj
