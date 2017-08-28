@@ -6,7 +6,7 @@
 # Build
 msbuild Framework461/MyLibrary/MyLibrary.fsproj
 
-# Not supported on mono
+# Not supported on Mono
 nuget pack Framework461/MyLibrary/MyLibrary.fsproj -OutputDirectory ~/.local-nuget -IncludeReferencedProjects -Prop Configuration=Release
 
 # Pack
@@ -15,7 +15,7 @@ nuget pack Framework461/MyLibrary/MyLibrary.nuspec -OutputDirectory ~/.local-nug
 
 ### Standard 2.0
 
-```
+```bash
 # Build 
 dotnet build Standard20/MyApp/MyApp.fsproj
 
@@ -28,6 +28,21 @@ dotnet add Standard20/MyApp/MyApp.fsproj package MyLibrary
 # Restore package
 dotnet restore Standard20/MyApp/MyApp.fsproj
 
+# Add package reference
+dotnet add Standard20/MyApp/MyApp.fsproj package Serilog
+dotnet add Standard20/MyApp/MyApp.fsproj package Serilog.Sinks.RollingFile
+
 # Run
 dotnet run --project Standard20/MyApp/MyApp.fsproj
+```
+
+## Paket
+
+```
+# Break reference in MyLibrary 
+paket add Serilog --project Framework461/MyLibrary/MyLibrary.fsproj
+paket add Serilog.Sinks.RollingFile --project Framework461/MyLibrary/MyLibrary.fsproj
+
+paket remove Serilog --project Framework461/MyLibrary/MyLibrary.fsproj
+paket remove Serilog.Sinks.RollingFile --project Framework461/MyLibrary/MyLibrary.fsproj
 ```

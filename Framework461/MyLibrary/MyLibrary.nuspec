@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MyLibrary</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>wk</authors>
     <owners>wk</owners>
     <licenseUrl>https://github.com/wk-j/framework461-standard20</licenseUrl>
