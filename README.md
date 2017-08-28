@@ -47,9 +47,12 @@ paket remove Serilog --project Framework461/MyLibrary/MyLibrary.fsproj
 paket remove Serilog.Sinks.RollingFile --project Framework461/MyLibrary/MyLibrary.fsproj
 ```
 
-## Self Contained
+### Self Contained
 
 ```bash
+# Publish
 dotnet publish -c release -r osx.10.10-x64  Standard20/MyApp/MyApp.fsproj --output "../../Dist"
+
+# Run
 ./Dist/MyApp
 ```
