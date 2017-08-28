@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MyLibrary</id>
+    <version>1.0.1</version>
+    <authors>wk</authors>
+    <owners>wk</owners>
+    <licenseUrl>https://github.com/wk-j/framework461-standard20</licenseUrl>
+    <projectUrl>https://github.com/wk-j/framework461-standard20</projectUrl>
+    <iconUrl>https://github.com/wk-j/framework461-standard20</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>My library</description>
+    <releaseNotes>My library</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="bin/$configuration$/$id$.dll" target="lib/net461" />
+  </files>
+</package>
